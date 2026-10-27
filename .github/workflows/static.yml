@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Gulp Build
         working-directory: ./src
-        run: npx gulp --color
+        run: npx gulp clean build-res build-lib build-scss build-js build-html --color
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
