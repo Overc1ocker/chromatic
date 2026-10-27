@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none; }
+
+body {
+  margin: 0px;
+  overflow: hidden;
+  background-color: black; }
+
+canvas {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  /* Disable selection/copy in UIWebView */ }
+
+#putOnVR {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  display: none;
+  text-align: center; }
+
+#putOnVR img {
+  width: 50%; }
+
+#icons {
+  background-color: yellow;
+  display: block; }
+
+#iconwebvr img {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  width: 20%;
+  min-width: 150px;
+  max-width: 250px; }
+
+#iconfunk img {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 20%;
+  min-width: 70px;
+  max-width: 150px; }
+
+#desc {
+  font-size: calc(10px + .4vw);
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gray;
+  text-align: center;
+  line-height: 1.5em;
+  font-family: 'Roboto Mono', monospace;
+  width: 80%; }
+
+#desc p {
+  margin: 0 auto; }
+
+a#desc-link {
+  color: gray;
+  display: block;
+  margin-top: 0.5em; }
+
+#enter360 {
+  margin-top: 0.5em;
+  text-decoration: underline;
+  color: #0a64ff;
+  font-size: calc(10px + .4vw); }
+
+#enter360:hover {
+  cursor: pointer;
+  color: #14ffff; }
+
+#btns {
+  margin-top: 1.75em; }
+
+.webvr-ui-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em; }
+
+/*
+.webvr-ui-button-description {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.8em;
+	width: 150px;
+	line-height: 1.5em;
+	margin-top: 1em;
+}*/
+.btn {
+  display: inline-flex;
+  margin: 0 0.5em; }
+
+#infobtn {
+  position: fixed;
+  right: 10px;
+  top: 10px; }
+
+#infobtn img {
+  width: 24px; }
+
+#infobtn-quit {
+  position: fixed;
+  right: 10px;
+  top: 10px; }
+
+#infobtn-quit img {
+  width: 24px; }
+
+#infowall {
+  position: fixed;
+  background: -webkit-linear-gradient(#e078bf, #6cb8fe);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e078bf, #6cb8fe);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e078bf, #6cb8fe);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e078bf, #6cb8fe);
+  /* Standard syntax */
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  display: none;
+  font-family: 'Roboto Mono', monospace; }
+
+#infowall-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center; }
+
+#infowall-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em; }
+
+#infowall-content p {
+  font-size: 0.7em;
+  line-height: 1.5em;
+  margin-top: 1.5em; }
+
+#infowall-content a {
+  color: #00ffe7; }
+
+#stats {
+  padding: 6px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  color: white;
+  background-color: black;
+  display: none;
+  font-family: monospace;
+  border: 1px solid white; }
+
+#stats strong {
+  font-weight: bolder;
+  color: #aaaaaa; }
+
+#buttons {
+  display: none;
+  position: fixed;
+  top: 5px;
+  left: 5px; }
+
+#buttons button {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-family: monospace;
+  border-top: 1px solid #aaaaaa;
+  border-left: 1px solid #aaaaaa;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid #333333;
+  border-radius: 3px; }
+
+#buttons button:hover {
+  background-color: #00aaaa; }
+
+#buttons button:active img {
+  position: relative;
+  bottom: -2px; }
